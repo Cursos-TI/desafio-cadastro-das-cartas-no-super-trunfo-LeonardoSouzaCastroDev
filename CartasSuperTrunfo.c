@@ -40,7 +40,39 @@ int main(){
 
     printf("\n");
 
-    printf("Carta:\n");
+    printf("Carta 1:\n");
+    printf("Estado: %c\n", estado);
+    printf("Codigo: %s\n", codigoCompleto);
+    printf("Cidade: %s\n", cidade);
+    printf("Populacao: %d\n", populacao);
+    printf("Area: %.2f Km²\n", area);
+    printf("PIB: %.2f bilhoes de reais\n", PIB);
+    printf("Numero de Pontos Turisticos: %d\n\n", NPT);
+
+    printf("Informe uma letra entre 'A' a 'H': ");
+    scanf("%c", &estado);
+
+    printf("Informe um numero entre 01 e 04: ");
+    scanf("%s", codigo);
+
+    sprintf(codigoCompleto, "%c%s", estado, codigo);
+
+    printf("Nome da cidade: ");
+    scanf("%s", cidade);
+
+    printf("Numero de habitantes: ");
+    scanf("%d", &populacao);
+
+    printf("Area da cidade em km²: ");
+    scanf("%f", &area);
+
+    printf("PIB: ");
+    scanf("%f", &PIB);
+
+    printf("Numero de Pontos Turisticos: ");
+    scanf("%d", &NPT);
+
+    printf("Carta 2:\n");
     printf("Estado: %c\n", estado);
     printf("Codigo: %s\n", codigoCompleto);
     printf("Cidade: %s\n", cidade);
