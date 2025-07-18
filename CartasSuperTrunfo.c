@@ -12,31 +12,34 @@ int main(){
     float area;
     float PIB;
     int NPT;
+    float densidadePopu;
+    float pibCapita;
 
-    system("cls");
+    printf("Informe uma letra entre 'A' a 'H': \n");
+    scanf(" %c", &estado);
 
-    printf("Informe uma letra entre 'A' a 'H': ");
-    scanf("%c", &estado);
-
-    printf("Informe um numero entre 01 e 04: ");
-    scanf("%s", codigo);
+    printf("Informe um numero entre 01 e 04: \n");
+    scanf(" %s", codigo);
 
     sprintf(codigoCompleto, "%c%s", estado, codigo);
 
-    printf("Nome da cidade: ");
-    scanf("%s", cidade);
+    printf("Nome da cidade: \n");
+    scanf(" %s", cidade);
 
-    printf("Numero de habitantes: ");
-    scanf("%d", &populacao);
+    printf("Numero de habitantes: \n");
+    scanf(" %d", &populacao);
 
-    printf("Area da cidade em km²: ");
-    scanf("%f", &area);
+    printf("Area da cidade em km2: \n");
+    scanf(" %f", &area);
 
-    printf("PIB: ");
-    scanf("%f", &PIB);
+    printf("PIB: \n");
+    scanf(" %f", &PIB);
 
-    printf("Numero de Pontos Turisticos: ");
-    scanf("%d", &NPT);
+    printf("Numero de Pontos Turisticos: \n");
+    scanf(" %d", &NPT);
+
+    densidadePopu = populacao/area;
+    pibCapita = PIB/ populacao;
 
     printf("\n");
 
@@ -45,32 +48,37 @@ int main(){
     printf("Codigo: %s\n", codigoCompleto);
     printf("Cidade: %s\n", cidade);
     printf("Populacao: %d\n", populacao);
-    printf("Area: %.2f Km²\n", area);
+    printf("Area: %.2f Km2\n", area);
     printf("PIB: %.2f bilhoes de reais\n", PIB);
-    printf("Numero de Pontos Turisticos: %d\n\n", NPT);
+    printf("Numero de Pontos Turisticos: %d\n", NPT);
+    printf("Densidade Populacional: %.2f\n", densidadePopu);
+    printf("PIB per Capita: %.2f\n", pibCapita);
 
     printf("Informe uma letra entre 'A' a 'H': ");
-    scanf("%c", &estado);
+    scanf(" %c", &estado);
 
     printf("Informe um numero entre 01 e 04: ");
-    scanf("%s", codigo);
+    scanf(" %s", codigo);
 
     sprintf(codigoCompleto, "%c%s", estado, codigo);
 
     printf("Nome da cidade: ");
-    scanf("%s", cidade);
+    scanf(" %s", cidade);
 
     printf("Numero de habitantes: ");
-    scanf("%d", &populacao);
+    scanf(" %d", &populacao);
 
     printf("Area da cidade em km²: ");
-    scanf("%f", &area);
+    scanf(" %f", &area);
 
     printf("PIB: ");
-    scanf("%f", &PIB);
+    scanf(" %f", &PIB);
 
     printf("Numero de Pontos Turisticos: ");
-    scanf("%d", &NPT);
+    scanf(" %d", &NPT);
+
+    densidadePopu = populacao/area;
+    pibCapita = PIB/ populacao;
 
     printf("Carta 2:\n");
     printf("Estado: %c\n", estado);
@@ -80,4 +88,6 @@ int main(){
     printf("Area: %.2f Km²\n", area);
     printf("PIB: %.2f bilhoes de reais\n", PIB);
     printf("Numero de Pontos Turisticos: %d\n", NPT);
+    printf("Densidade Populacional: %.2f\n", densidadePopu);
+    printf("PIB per Capita: %.2f\n", pibCapita);
 }
